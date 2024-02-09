@@ -152,11 +152,11 @@ a {
 }
 
 .blog__card-background1 {
-    background-image: url("../YouTalk/image/png/Hero1.png");
+    background-image: url("../image/png/Hero1.png");
 }
 
 .blog__card-background2 {
-    background-image: url("../YouTalk/image/png/Hero2.png");
+    background-image: url("../image/png/Hero2.png");
     display: flex;
     flex-grow: 0;
 }
@@ -245,27 +245,27 @@ a {
 }
 
 .blog__card-background3 {
-    background-image: url("../YouTalk/image/png/card1.png");
+    background-image: url("../image/png/card1.png");
 }
 
 .blog__card-background4 {
-    background-image: url("../YouTalk/image/png/card2.png");
+    background-image: url("../image/png/card2.png");
 }
 
 .blog__card-background5 {
-    background-image: url("../YouTalk/image/png/card3.png");
+    background-image: url("../image/png/card3.png");
 }
 
 .blog__card-background6 {
-    background-image: url("../YouTalk/image/png/card4.png");
+    background-image: url("../image/png/card4.png");
 }
 
 .blog__card-background7 {
-    background-image: url("../YouTalk/image/png/card5.png");
+    background-image: url("../image/png/card5.png");
 }
 
 .blog__card-background8 {
-    background-image: url("../YouTalk/image/png/card6.png");
+    background-image: url("../image/png/card6.png");
 }
 
 .blog__button {
