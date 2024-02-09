@@ -1,0 +1,796 @@
+@import url("/css/font.css");
+
+:root {
+    --text-primary: #333;
+
+    --grid-column-width: 78px;
+    --grid-gap: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    padding-top: 24px;
+    padding-bottom: 16px;
+    font-family: "Montserrat Bold";
+    font-size: 24px;
+    color: var(--text-primary);
+}
+
+figcaption {
+    padding-top: 16px;
+    padding-bottom: 24px;
+    font-family: "Montserrat Regular";
+    font-size: 14px;
+    color: #868686;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, var(--grid-column-width));
+    gap: var(--grid-gap);
+}
+
+/** main **/
+
+.main {
+    padding: 0 7.5rem;
+}
+
+.main__nav {
+    display: flex;
+    flex-direction: row;
+    padding-top: 16px;
+    padding-left: 6px;
+    gap: .5rem;
+}
+
+.main__nav-link {
+    display: flex;
+    font-family: "Montserrat Regular";
+    font-size: 12px;
+    color: #333333B2;
+    cursor: pointer;
+}
+
+/** section **/
+
+.article {
+    padding-top: 54px;
+}
+
+.article__big-column {
+    grid-column: span 7;
+}
+
+.article__heading {
+    padding-bottom: 16px;
+    font-family: "Montserrat Bold";
+    font-size: 48px;
+    line-height: 56px;
+    color: var(--text-primary);
+}
+
+.article__writer,
+.article__date {
+    font-family: "Montserrat Regular";
+    font-size: 14px;
+    color: #494949;
+}
+
+.article__primary-img {
+    padding-top: 24px;
+}
+
+.article__content-container {
+    grid-column: 1 / 7;
+}
+
+.article__content-heading {
+    padding-top: 24px;
+    font-family: "Montserrat Bold";
+    font-size: 16px;
+    color: var(--text-primary);
+}
+
+.article__content-list {
+    padding-left: 35px;
+    padding-top: 16px;
+}
+
+.article__content-item {
+    font-size: 20px;
+    color: #03B2A5;
+}
+
+.article__content-link,
+.article__item-link {
+    font-family: "Montserrat Medium";
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
+.article__item-list {
+    padding-left: 25px;
+    list-style: none;
+}
+
+.article__item-item:nth-child(2) {
+    padding-left: 15px;
+}
+
+.article__item-item:nth-child(3) {
+    padding-left: 30px;
+}
+
+.article__text {
+    font-family: "Montserrat Medium";
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-primary);
+}
+
+.article__blockquote {
+    margin-top: 40px;
+    border: 1px solid #F3F7FE;
+    border-radius: 16px;
+    background-color: #F3F7FE;
+    position: relative;
+}
+
+.article__blockquote-container {
+    position: relative;
+    padding: 34px 24px 24px;
+}
+
+.article__blockquote-img {
+    position: absolute;
+    top: 24px;
+}
+
+.article__blockquote-text {
+    padding-bottom: 8px;
+    font-family: "Montserrat Italic";
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-primary);
+}
+
+.article__blockquote-writer {
+    font-family: "Montserrat Bold";
+    font-size: 16px;
+    color: var(--text-primary);
+}
+
+.article__subheading-list {
+    padding-left: 35px;
+}
+
+.article__subheading-item {
+    font-size: 20px;
+    color: #03B2A5;
+}
+
+.article__subheading-item:nth-child(1) {
+    padding-bottom: 16px;
+}
+
+.article__blockquote2 {
+    padding: 24px 0;
+    position: relative;
+}
+
+.article__blockquote-container2 {
+    padding: 24px 103px 48px;
+    position: relative;
+}
+
+.article__blockquote-img2 {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    z-index: -1;
+}
+
+.article__card {
+    padding: 24px 0;
+    display: grid;
+    gap: 24px;
+}
+
+.article__card-img {
+    grid-column: 1 / 4;
+}
+
+.card-text {
+    grid-column: 4 / 8;
+}
+
+.article__practice {
+    padding-top: 24px;
+}
+
+.article__practice-container {
+    padding: 24px;
+    border-radius: 16px;
+    background-color: #FEFAEC;
+}
+
+.article__practice-heading {
+    padding-bottom: 8px;
+    font-family: "Montserrat Bold";
+    font-size: 16px;
+    color: var(--text-primary);
+}
+
+.article__practice-container2 {
+    padding: 24px;
+    border-radius: 16px;
+    background-color: #FFF3EB;
+}
+
+.article__card2 {
+    padding-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+}
+
+.article__picture {
+    padding: 24px 0;
+    display: grid;
+    justify-content: center;
+}
+
+.article__practice-container3 {
+    padding: 24px;
+    border-radius: 16px;
+    background: rgba(3, 178, 165, 0.10);
+}
+
+.article__teg-list {
+    padding-top: 24px;
+    padding-bottom: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.teg-item-none {
+    display: block;
+}
+
+.article__teg-item {
+    padding-right: 25px;
+    font-size: 10px;
+    color: #494949;
+    
+}
+
+.article__teg-link {
+    font-family: "Montserrat Regular";
+    font-size: 14px;
+    color: #2963A3;
+}
+
+.article__teg-item::marker {
+    transform: translateY(-15px);
+}
+
+.article__small-column {
+    grid-column: 10 / -1;
+}
+
+.article__registration {
+    border-radius: 16px;
+    background: #E6F0FD;
+}
+
+.article__registration-img {
+    padding: 24px 12.5px;
+}
+
+.article__registration-container {
+    padding: 0 24px 24px;
+}
+
+.article__registration-heading {
+    font-family: "Montserrat Bold";
+    font-size: 18px;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.article__registration-text {
+    padding: 8px 0 24px;
+    text-align: center;
+    font-family: "Montserrat Regular";
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-primary);
+}
+
+.article__registration-btn {
+    padding: 12px 67.5px;
+    font-family: "Montserrat Bold";
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #35B3A9;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.article__psychologist-card {
+    margin-top: 24px;
+    border: 1px solid #DEDEDE;
+    border-radius: 16px;
+    background: #FFFFFF;
+}
+
+.article__psychologist-card-container {
+    padding: 24px 81px 16px;
+    position: relative;
+}
+
+.article__psychologist-card-avatar {
+    border-radius: 50%;
+    position: relative;
+}
+
+.article__remark,
+.article__remark2 {
+    padding: 3px 6px;
+    border-radius: 6px;
+    background: rgba(243, 244, 248, 0.70);
+    z-index: 1;
+}
+
+.article__remark {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.article__remark2 {
+    position: absolute;
+    top: 48px;
+    left: 16px;
+}
+
+.article__psychologist-card-info {
+    padding: 0 16px 36px;
+}
+
+.article__psychologist-card-name {
+    font-family: "Montserrat Bold";
+    font-size: 20px;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.article__psychologist-card-profession {
+    padding: 4px 0;
+    font-family: "Montserrat SemiBold";
+    font-size: 16px;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.article__psychologist-card-exp {
+    padding-bottom: 20px;
+    font-family: "Montserrat Medium";
+    font-size: 14px;
+    color: #A2A7B1;
+    text-align: center;
+}
+
+.article__psychologist-card-line {
+    padding: 16px 0;
+    max-width: 250px;
+    border-top: 1px solid #DEDEDE;
+}
+
+.article__psychologist-card-heading {
+    font-family: "Montserrat Bold";
+    font-size: 16px;
+    color: var(--text-primary);
+}
+
+.psychologist-card-list {
+    padding-top: 8px;
+    padding-left: 24px;
+}
+
+.psychologist-card-item {
+    font-family: "Montserrat Regular";
+    font-size: 14px;
+    color: var(--text-primary);
+}
+
+.psychologist-card-item::marker {
+    color: #03B2A5;
+}
+
+.psychologist-card-btn {
+    margin-top: 16px;
+    padding: 12px 75.5px;
+    font-family: "Montserrat Bold";
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #35B3A9;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.article__slogan {
+    margin: 28px 0 42px;
+}
+
+.article__offer {
+    border: 1px solid #DEDEDE;
+    border-radius: 24px;
+    background: #FFFFFF;
+    position: relative;
+}
+
+.article__offer-container {
+    padding: 32px;
+}
+
+.article__offer-heading {
+    font-family: "Montserrat Bold";
+    font-size: 18px;
+    color: #2963A3;
+}
+
+.article__offer-heading::first-letter {
+    font-size: 24px;
+}
+
+.article__offer-text {
+    margin-right: 22px;
+    padding: 16px 0;
+    font-family: "Opensans Regular";
+    font-size: 14px;
+    line-height: 20px;
+    color: #011632;
+}
+
+.article__offer-price {
+    font-family: "Montserrat Bold";
+    font-size: 24px;
+    color: var(--text-primary);
+}
+
+.article__offer-btn {
+    margin-top: 16px;
+    padding: 12px 23px;
+    font-family: "Montserrat Bold";
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #35B3A9;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.article__offer-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.article__decor {
+    padding-top: 633px;
+    padding-left: 184px;
+}
+
+.article__result-line {
+    padding-bottom: 72px;
+    grid-column: 1 / -1;
+    border-top: 1px solid #DEDEDE;
+    max-width: 1200px;
+}
+
+.article__result-column {
+    padding-bottom: 108px;
+    display: grid;
+    grid-template-columns: repeat(12, var(--grid-column-width));
+    gap: var(--grid-gap);
+}
+
+.article__result {
+    display: grid;
+    grid-column: 1 / 5;
+}
+
+.article__result-heading {
+    grid-column: 1 / 5;
+    font-family: "Montserrat Bold";
+    font-size: 48px;
+    color: var(--text-primary);
+}
+
+.article__result-text {
+    padding: 24px 0 32px;
+    grid-column: 1 / 5;
+    font-family: "Montserrat Regular";
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--text-primary);
+}
+
+.article__result-btn {
+    margin-bottom: 50px;
+    padding: 20px 24px;
+    grid-column: 1 / 4;
+    font-family: "Montserrat Bold";
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #35B3A9;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.article__result-img {
+    grid-column: 8 / 12;
+    transform: translateX(-68px);
+}
+
+.article__result-img2 {
+    padding-left: 75px;
+}
+
+/** media **/
+
+@media (min-width: 769px) and (max-width:1024px) {
+    :root {
+        --grid-column-width: 58px;
+    }
+    img {
+        max-width: 100%;
+    }
+    .main {
+        padding: 0 23px;
+    }
+    .article__big-column {
+        grid-column: 1 / 10;
+    }
+    .article__registration-container {
+        padding: 0 20px 24px;
+    }
+    .article__registration-btn {
+        padding: 12px 41.5px;
+    }
+    .article__psychologist-card-container {
+        padding: 24px 51px 16px;
+    }
+    .psychologist-card-btn {
+        padding: 12px 37.5px;
+    }
+    .article__offer-container {
+        padding: 24px;
+    }
+    .article__offer-text {
+        margin: 0;
+    }
+    .article__decor,
+    .article__result-column {
+        display: none;
+    }
+}
+
+@media (min-width: 415px) and (max-width:768px) {
+    :root {
+        --grid-column-width: 46px;
+        --grid-gap: 16px;
+    }
+    .main {
+        padding: 0 20px;
+    }
+    .article__big-column,
+    .article__small-column {
+        grid-column: span 12;
+    }
+    .article__small-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        column-gap: 16px;
+        row-gap: 36px;
+    }
+    .article__registration-img {
+        padding: 24px 49.5px;
+    }
+    .article__psychologist-card {
+       margin: 0;
+    }
+    .article__registration-btn {
+        padding: 12px 105.5px;
+    }
+    .article__psychologist-card-container {
+        padding: 24px 117.5px 16px;
+    }
+    .article__psychologist-card-info {
+        padding: 0 52.5px 36px;
+    }
+    .psychologist-card-btn {
+        margin-top: 44px;
+        padding: 12px 75.5px;
+    }
+    .article__slogan, 
+    .article__offer {
+        max-height: 242px;
+        margin: 0;
+        object-fit: cover; 
+    }
+    .article__slogan-img {
+        width: 356px;
+        max-height: 242px;
+    }
+    .article__decor,
+    .article__result-column, 
+    .article__result-line {
+        display: none;
+    }
+}
+
+@media (min-width: 321px) and (max-width:414px) {
+    :root {
+        --grid-column-width: 22px;
+        --grid-gap: 10px;
+    }
+    .main {
+        padding: 0 20px;
+    }
+    .article__big-column,
+    .article__small-column {
+        grid-column: span 12;
+    }
+    .article__heading {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .article__primary-img {
+        max-width: 100%;
+    }
+    .article__blockquote-container2 {
+        padding: 24px 0px 48px;
+    }
+    .article__blockquote-text {
+        text-align: center;
+    }
+    .article__blockquote-img2 {
+        left: 70px;
+    }
+    .article__card {
+        display: flex;
+        flex-direction: column;
+    }
+    .article__card2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .adapt:nth-child(even) {
+        order: 1;
+    }
+    .article__small-column {
+        margin-top: 56px;
+        margin-bottom: 157px;
+    }
+    .article__registration-img {
+        padding: 24px 58.5px;
+    }
+    .article__psychologist-card {
+       margin: 0;
+    }
+    .article__registration-btn {
+        padding: 12px 105.5px;
+    }
+    .article__registration {
+        margin-bottom: 24px;
+    }
+    .article__registration-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .article__psychologist-card-container {
+        padding: 24px 127px 16px;
+    }
+    .article__psychologist-card-info {
+        padding: 0 62px 36px;
+    }
+    .article__slogan {
+        margin: 24px 0;
+    }
+    .article__slogan-img {
+        width: 374px;
+        max-height: 292px;
+    }
+
+    .article__decor,
+    .article__result-column, 
+    .article__teg-list, 
+    .article__result-line {
+        display: none;
+    }
+}
+
+@media (max-width:320px) {
+    :root {
+        --grid-column-width: 15px;
+        --grid-gap: 10px;
+    }
+    .main {
+        padding: 0 15px;
+    }
+    .article__big-column,
+    .article__small-column {
+        grid-column: span 12;
+    }
+    .article__heading {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .article__primary-img {
+        max-width: 100%;
+    }
+    .article__blockquote-container2 {
+        padding: 16px 0px;
+    }
+    .article__blockquote-text {
+        text-align: center;
+    }
+    .article__blockquote-img2 {
+        left: 30px;
+        top: 16px;
+    }
+    .article__card {
+        display: flex;
+        flex-direction: column;
+    }
+    .article__card2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .adapt:nth-child(even) {
+        order: 1;
+    }
+    .article__small-column {
+        margin-top: 56px;
+        margin-bottom: 157px;
+    }
+    .article__slogan-img {
+        width: 288px;
+        max-height: 292px;
+    }
+    .article__decor,
+    .article__result-column, 
+    .article__teg-list, 
+    .article__result-line {
+        display: none;
+    }
+}
